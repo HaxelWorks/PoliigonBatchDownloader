@@ -1,0 +1,36 @@
+LOGIN: "example@gmail.com"
+PASSWORD: "abc123" #optional, can be empty string "" the script will then ask for password
+N_WORKERS: 8
+DOWNLOAD_INIT_TIMEOUT: 60
+DOWNLOAD_PATH: "C:\\PoliigonDownload"
+
+download_textures: true
+download_hdrs: true
+download_models: false
+download_generators: true
+
+# texture sizes can be disabled by commenting them out
+texture-sizes:
+  # - 512kb
+  # - 1K
+  # - 2K
+  - 3K
+  - 4K
+  - 6K
+  - 8K
+  - HIRES
+
+hdr-sizes:
+  # - 1K
+  # - 2K
+  # - 3K
+  - 4K
+  - 6K
+  - 8K
+  - 16K
+  - 18K
+
+model-settings:
+  3D-Software: Blender #can be one of 3dsMax, Blender, Cinema4D, Maya
+  Renderer: Cycles #if not blender can also be one of Arnold, Corona, Redshift, Vray
+  model-extra-texture-size: highest # or 1K, 2K, 3K...
